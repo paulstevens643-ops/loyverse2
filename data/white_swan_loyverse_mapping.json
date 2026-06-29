@@ -1,0 +1,339 @@
+{
+  "source": "C:/Users/pauls/Downloads/white_swan_loyverse_menu.xlsx",
+  "counts": {
+    "categories": 5,
+    "items": 27,
+    "modifierGroups": 4,
+    "modifierOptions": 20
+  },
+  "categories": [
+    {
+      "name": "Gourmet Burgers"
+    },
+    {
+      "name": "Kebabs"
+    },
+    {
+      "name": "Loaded Fries"
+    },
+    {
+      "name": "Sides"
+    },
+    {
+      "name": "Fish Friday"
+    }
+  ],
+  "items": [
+    {
+      "category": "Gourmet Burgers",
+      "name": "Paul's Signature J.D. Burger",
+      "price": 13.95,
+      "description": "6oz steak patty, streaky bacon, chilli cheese, homemade onion rings, lettuce and tomato. With Paul's secret recipe maple bourbon Jack Daniel's BBQ sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Texas Burger",
+      "price": 11.95,
+      "description": "6oz steak patty, fried egg, homemade onion rings and HP sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Nacho Cheeseburger",
+      "price": 11.95,
+      "description": "6oz steak patty, crunchy nachos, jalapenos and warm nacho cheese sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Camembert Burger",
+      "price": 12.95,
+      "description": "6oz steak patty, melted Camembert, lettuce and beef tomato. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Garlic Mushroom & Blue Cheese Burger",
+      "price": 12.95,
+      "description": "6oz steak patty, garlic mushroom and melted blue cheese. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Chilli Burger",
+      "price": 12.95,
+      "description": "6oz steak patty topped with homemade chilli, chilli cheese and sour cream. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Surf & Turf Burger",
+      "price": 13.95,
+      "description": "6oz steak patty, freshly battered fish fillet and tartare sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Chicken & Bacon Burger",
+      "price": 12.95,
+      "description": "Two crispy chicken fillets, bacon and melted cheese. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Spicy Buffalo Chicken Burger",
+      "price": 12.95,
+      "description": "Two crispy chicken fillets, spicy cheese and buffalo sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Kebabs",
+      "name": "Doner Kebab",
+      "price": 10,
+      "description": "Freshly prepared doner meat served in warm flatbread with fresh salad and fries.",
+      "notes": null
+    },
+    {
+      "category": "Kebabs",
+      "name": "Chicken Shish Kebab",
+      "price": 10,
+      "description": "Seasoned chicken with peppers served in warm flatbread with pickled red cabbage, fresh salad and fries.",
+      "notes": null
+    },
+    {
+      "category": "Kebabs",
+      "name": "Tandoori Chicken Kebab",
+      "price": 10,
+      "description": "Marinated tandoori chicken served in warm flatbread with fresh salad and fries.",
+      "notes": null
+    },
+    {
+      "category": "Loaded Fries",
+      "name": "Chicken & Bacon Loaded Fries",
+      "price": 9.95,
+      "description": "Chicken and bacon pieces cooked in a BBQ sauce, tossed over fries and topped with melted cheese.",
+      "notes": null
+    },
+    {
+      "category": "Loaded Fries",
+      "name": "Philly Cheesesteak Loaded Fries",
+      "price": 9.95,
+      "description": "Sliced steak, onions, and peppers lightly seasoned, spread over seasoned fries and topped with melted Monterey Jack cheese.",
+      "notes": null
+    },
+    {
+      "category": "Loaded Fries",
+      "name": "Salt, Chilli & Pepper Loaded Fries",
+      "price": 9.95,
+      "description": "Choice of beef, pork or chicken strips with onions and peppers, spread over seasoned fries.",
+      "notes": null
+    },
+    {
+      "category": "Loaded Fries",
+      "name": "Meatball Marinara Loaded Fries",
+      "price": 9.95,
+      "description": "Homemade beef meatballs in a tomato and herb sauce over fries with mozzarella cheese.",
+      "notes": null
+    },
+    {
+      "category": "Sides",
+      "name": "House Slaw",
+      "price": 1,
+      "description": "Add to any meal.",
+      "notes": null
+    },
+    {
+      "category": "Sides",
+      "name": "Corn on the Cob",
+      "price": 1.5,
+      "description": "Add to any meal.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Large Cod (10oz)",
+      "price": 14.95,
+      "description": "Served with chips and choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Large Haddock (10oz)",
+      "price": 15.95,
+      "description": "Served with chips and choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Small Fish & Chips",
+      "price": 11.95,
+      "description": "Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Breaded Wholetail Scampi & Chips",
+      "price": 9.95,
+      "description": "Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Homemade Fish Cake & Chips",
+      "price": 8.95,
+      "description": "Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Pie & Chips",
+      "price": 10.95,
+      "description": "Steak & kidney, chicken & mushroom, or mince beef & onion. Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Small Battered Sausage & Chips",
+      "price": 7.5,
+      "description": "Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Large Battered Sausage & Chips",
+      "price": 8.95,
+      "description": "Served with choice of mushy peas, curry sauce, gravy or beans.",
+      "notes": null
+    },
+    {
+      "category": "Fish Friday",
+      "name": "Portion of Chips",
+      "price": 3.5,
+      "description": null,
+      "notes": null
+    }
+  ],
+  "modifierGroups": [
+    {
+      "name": "Burger Extras",
+      "options": [
+        {
+          "name": "Extra Patty",
+          "price": 4
+        },
+        {
+          "name": "Bacon",
+          "price": 1.5
+        },
+        {
+          "name": "Cheese (Cheddar / Chilli Cheese)",
+          "price": 1
+        },
+        {
+          "name": "Blue Cheese",
+          "price": 1.5
+        },
+        {
+          "name": "Onion Rings",
+          "price": 1.5
+        },
+        {
+          "name": "Hash Brown",
+          "price": 1
+        },
+        {
+          "name": "Jalapenos",
+          "price": 0.75
+        },
+        {
+          "name": "Homemade Chilli",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "Burger Sauces",
+      "options": [
+        {
+          "name": "Burger Sauce",
+          "price": 0
+        },
+        {
+          "name": "Garlic Mayo",
+          "price": 0
+        },
+        {
+          "name": "BBQ Sauce",
+          "price": 0
+        },
+        {
+          "name": "Chipotle Mayo",
+          "price": 0
+        },
+        {
+          "name": "Buffalo Sauce",
+          "price": 0
+        },
+        {
+          "name": "Maple Bourbon BBQ",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "name": "Burger Upgrade",
+      "options": [
+        {
+          "name": "Sizzler Style Upgrade",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "Fish Friday Extras",
+      "options": [
+        {
+          "name": "Mushy Peas",
+          "price": 1
+        },
+        {
+          "name": "Curry Sauce",
+          "price": 1
+        },
+        {
+          "name": "Gravy",
+          "price": 1
+        },
+        {
+          "name": "Beans",
+          "price": 1
+        },
+        {
+          "name": "Bread & Butter",
+          "price": 1
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "itemMatch": {
+        "category": "Gourmet Burgers"
+      },
+      "modifierGroups": [
+        "Burger Extras",
+        "Burger Sauces",
+        "Burger Upgrade"
+      ]
+    },
+    {
+      "itemMatch": {
+        "category": "Fish Friday"
+      },
+      "modifierGroups": [
+        "Fish Friday Extras"
+      ]
+    }
+  ]
+}
