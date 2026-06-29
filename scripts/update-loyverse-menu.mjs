@@ -155,6 +155,7 @@ function variantsPayload(row, existingItem) {
 }
 
 function itemPayload(row, categoryId, modifierIds, existingItem) {
+  const variants = variantsPayload(row, existingItem);
   const payload = {
     ...(existingItem?.id ? { id: existingItem.id } : {}),
     item_name: row.name,
@@ -170,8 +171,17 @@ function itemPayload(row, categoryId, modifierIds, existingItem) {
     modifiers_ids: modifierIds,
     form: existingItem?.form || "SQUARE",
     color: existingItem?.color || "GREEN",
-    variants: variantsPayload(row, existingItem),
+    variants,
   };
+  if (existingItem?.option1_name || variants.some((variant) => variant.option1_value)) {
+    payload.option1_name = existingItem?.option1_name || "Size";
+  }
+  if (existingItem?.option2_name || variants.some((variant) => variant.option2_value)) {
+    payload.option2_name = existingItem?.option2_name || "Option 2";
+  }
+  if (existingItem?.option3_name || variants.some((variant) => variant.option3_value)) {
+    payload.option3_name = existingItem?.option3_name || "Option 3";
+  }
   Object.keys(payload).forEach((key) => payload[key] === undefined && delete payload[key]);
   return payload;
 }
