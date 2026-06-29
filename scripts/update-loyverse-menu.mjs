@@ -17,6 +17,18 @@ const slug = (value) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 const norm = (value) => String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
+const shortHash = (value) => {
+  let hash = 0;
+  for (const char of String(value)) {
+    hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+  }
+  return hash.toString(36);
+};
+const makeReferenceId = (row) => {
+  const base = `ws-${slug(row.category)}-${slug(row.name)}`;
+  const suffix = shortHash(`${row.category}|${row.name}`);
+  return `${base.slice(0, 49 - suffix.length)}-${suffix}`.slice(0, 50);
+};
 
 const summary = {
   categories: { created: [], updated: [], unchanged: [] },
@@ -147,7 +159,7 @@ function itemPayload(row, categoryId, modifierIds, existingItem) {
     ...(existingItem?.id ? { id: existingItem.id } : {}),
     item_name: row.name,
     description: row.description || undefined,
-    reference_id: existingItem?.reference_id || `white-swan-${slug(row.category)}-${slug(row.name)}`.slice(0, 128),
+    reference_id: existingItem?.reference_id || makeReferenceId(row),
     category_id: categoryId,
     track_stock: existingItem?.track_stock ?? false,
     sold_by_weight: existingItem?.sold_by_weight ?? false,
