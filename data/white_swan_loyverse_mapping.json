@@ -2,7 +2,7 @@
   "source": "C:/Users/pauls/Downloads/white_swan_loyverse_menu.xlsx",
   "counts": {
     "categories": 5,
-    "items": 27,
+    "items": 28,
     "modifierGroups": 4,
     "modifierOptions": 20
   },
@@ -28,6 +28,7 @@
       "category": "Gourmet Burgers",
       "name": "Paul's Signature J.D. Burger",
       "price": 13.95,
+      "cost": 4.74,
       "description": "6oz steak patty, streaky bacon, chilli cheese, homemade onion rings, lettuce and tomato. With Paul's secret recipe maple bourbon Jack Daniel's BBQ sauce. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -35,6 +36,7 @@
       "category": "Gourmet Burgers",
       "name": "Texas Burger",
       "price": 11.95,
+      "cost": 3.72,
       "description": "6oz steak patty, fried egg, homemade onion rings and HP sauce. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -42,6 +44,7 @@
       "category": "Gourmet Burgers",
       "name": "Nacho Cheeseburger",
       "price": 11.95,
+      "cost": 3.79,
       "description": "6oz steak patty, crunchy nachos, jalapenos and warm nacho cheese sauce. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -49,6 +52,7 @@
       "category": "Gourmet Burgers",
       "name": "Camembert Burger",
       "price": 12.95,
+      "cost": 4.14,
       "description": "6oz steak patty, melted Camembert, lettuce and beef tomato. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -56,6 +60,7 @@
       "category": "Gourmet Burgers",
       "name": "Garlic Mushroom & Blue Cheese Burger",
       "price": 12.95,
+      "cost": 4.14,
       "description": "6oz steak patty, garlic mushroom and melted blue cheese. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -63,6 +68,7 @@
       "category": "Gourmet Burgers",
       "name": "Chilli Burger",
       "price": 12.95,
+      "cost": 4.49,
       "description": "6oz steak patty topped with homemade chilli, chilli cheese and sour cream. Served with skinny fries and house slaw.",
       "notes": null
     },
@@ -70,21 +76,32 @@
       "category": "Gourmet Burgers",
       "name": "Surf & Turf Burger",
       "price": 13.95,
+      "cost": 4.59,
       "description": "6oz steak patty, freshly battered fish fillet and tartare sauce. Served with skinny fries and house slaw.",
       "notes": null
     },
     {
       "category": "Gourmet Burgers",
       "name": "Chicken & Bacon Burger",
-      "price": 12.95,
+      "price": 11.95,
+      "cost": 3.4,
       "description": "Two crispy chicken fillets, bacon and melted cheese. Served with skinny fries and house slaw.",
       "notes": null
     },
     {
       "category": "Gourmet Burgers",
       "name": "Spicy Buffalo Chicken Burger",
-      "price": 12.95,
+      "price": 11.95,
+      "cost": 3.2,
       "description": "Two crispy chicken fillets, spicy cheese and buffalo sauce. Served with skinny fries and house slaw.",
+      "notes": null
+    },
+    {
+      "category": "Gourmet Burgers",
+      "name": "Southern Fried Chicken Burger",
+      "price": 11.95,
+      "cost": 3,
+      "description": "Crispy southern fried chicken fillets with lettuce and mayo. Served with skinny fries and house slaw.",
       "notes": null
     },
     {
