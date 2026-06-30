@@ -1,0 +1,34 @@
+name: Verify Burgers
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify-burgers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Validate secret
+        run: |
+          if [ -z "${{ secrets.LOYVERSE_TOKEN }}" ]; then
+            echo "Missing repository secret LOYVERSE_TOKEN"
+            exit 1
+          fi
+
+      - name: Verify burger items
+        env:
+          LOYVERSE_TOKEN: ${{ secrets.LOYVERSE_TOKEN }}
+        run: node scripts/verify-burgers.mjs
+
+      - name: Upload verification artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: burger-verification-results
+          path: artifacts/
