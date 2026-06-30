@@ -120,19 +120,19 @@ function existingVariantPayload(variant, changes = {}) {
   return payload;
 }
 
-function newVariantPayload(price) {
+function newVariantPayload(row) {
   return {
     sku: `WS-${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 10000)}`,
-    cost: 0,
+    cost: row.cost ?? 0,
     default_pricing_type: "FIXED",
-    default_price: price,
+    default_price: row.price,
     stores: [],
   };
 }
 
 function variantsPayload(row, existingItem) {
   const variants = existingItem?.variants || [];
-  if (!variants.length) return [newVariantPayload(row.price)];
+  if (!variants.length) return [newVariantPayload(row)];
 
   const preferred =
     variants.find((variant) => isSingleOrStandardVariant(variant)) ||
@@ -145,12 +145,12 @@ function variantsPayload(row, existingItem) {
         item: row.name,
         variant: variant.option1_value || variant.sku || variant.variant_id,
       });
-      return existingVariantPayload(variant, { availableForSale: false });
+      return existingVariantPayload(variant, { cost: row.cost, availableForSale: false });
     }
     if (variant.variant_id === preferred.variant_id) {
-      return existingVariantPayload(variant, { price: row.price, availableForSale: true });
+      return existingVariantPayload(variant, { price: row.price, cost: row.cost, availableForSale: true });
     }
-    return existingVariantPayload(variant);
+    return existingVariantPayload(variant, { cost: row.cost });
   });
 }
 
@@ -283,6 +283,7 @@ const relevantItems = finalItems
     modifiers: item.modifiers_ids || item.modifier_ids || [],
     variants: (item.variants || []).map((variant) => ({
       sku: variant.sku,
+      cost: variant.cost,
       price: variant.default_price,
       store_price: variant.stores?.[0]?.price,
       available: variant.stores?.[0]?.available_for_sale,
